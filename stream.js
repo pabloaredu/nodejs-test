@@ -24,7 +24,7 @@ firstReadStream
       Length: dataLength
     });
     console.log(arr);
-    // Output text
+    // Output objects
     firstWriteStream.write(JSON.stringify(arr));
   })
   .on('end', () => {
@@ -47,6 +47,7 @@ setTimeout( () => {
         var rate = item.Length/(item.ElapsedTime * .001);//Throughput rate in bytes per sec
         var report = `STREAM PERFORMANCE: Time elapsed (ms): ${item.ElapsedTime}, Number of lines received: ${item.NumberOfLines}, Length (bytes): ${item.Length}, Throughput Rate (bytes/sec): ${rate} \n`
         console.log(report);
+        // Output human readable report
         secondWriteStream.write(report);
       };
     })
