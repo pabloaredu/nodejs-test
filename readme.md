@@ -4,7 +4,7 @@ Streams to consume data and make readable reports and logs.
 ## Getting Started
 There are 2 scripts, stream.js and myscript.js
 
-stream.js -> it consumes text from a file "mydata.txt" (for demonstrative purposes) and gives a human readable report of every piece of data received in a text file. (create a text file mydata.txt for testing).
+stream.js -> it consumes text from a file "mydata.txt" (for demonstrative purposes) and gives a human readable report of every piece of data received in a text file (create a text file mydata.txt for testing).
 
 To run: node stream.js
 
